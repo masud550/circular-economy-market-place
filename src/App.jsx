@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './components/Homepage';
 import Buyer from './components/Buyer';
 import Seller from './components/Seller';
 import GeneralPublic from './components/GeneralPublic';
@@ -10,16 +10,14 @@ import Shipping from './components/Shipping';
 function App() {
   return (
     <Router>
-      <div className="bg-gray-100 min-h-screen">
-        <Navbar />
-        <Routes>
-          <Route path="/buyer/*" element={<Buyer />} />
-          <Route path="/seller/*" element={<Seller />} />
-          <Route path="/general-public" element={<GeneralPublic />} />
-          <Route path="/admin/*" element={<Admin />} />
-          <Route path="/shipping" element={<Shipping />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/buyer" element={<Buyer />} />
+        <Route path="/seller" element={<Seller />} />
+        <Route path="/general-public" element={<GeneralPublic />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/shipping" element={<Shipping />} />
+      </Routes>
     </Router>
   );
 }
