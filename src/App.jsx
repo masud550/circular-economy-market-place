@@ -6,12 +6,14 @@ import Seller from './components/Seller';
 import GeneralPublic from './components/GeneralPublic';
 import Admin from './components/Admin';
 import Shipping from './components/Shipping';
+import ChooseRole from './components/ChooseRole'; // Import the new component
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/choose-role" element={<ChooseRole />} /> {/* New Route */}
         <Route path="/buyer" element={<Buyer />} />
         <Route path="/seller" element={<Seller />} />
         <Route path="/general-public" element={<GeneralPublic />} />
