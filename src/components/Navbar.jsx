@@ -10,9 +10,7 @@ function Navbar() {
           <Link to="/buyer" className="hover:text-yellow-300 transition duration-300">Buyer</Link>
           <Link to="/seller" className="hover:text-yellow-300 transition duration-300">Seller</Link>
           <Link to="/general-public" className="hover:text-yellow-300 transition duration-300">General Public</Link>
-          <Link to="/admin" className="hover:text-yellow-300 transition duration-300">Admin</Link>
-          <Link to="/shipping" className="hover:text-yellow-300 transition duration-300">Shipping</Link>
-        </div>
+          </div>
       </div>
     </nav>
   );

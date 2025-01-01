@@ -8,8 +8,6 @@ function ChooseRole() {
     { label: 'Buyer', path: '/buyer' },
     { label: 'Seller', path: '/seller' },
     { label: 'General Public', path: '/general-public' },
-    { label: 'Admin', path: '/admin' },
-    { label: 'Shipping', path: '/shipping' },
   ];
 
   return (

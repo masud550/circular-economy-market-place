@@ -26,9 +26,9 @@ function Seller() {
   };
 
   return (
-    <div className="p-6 min-h-screen bg-gradient-to-r from-orange-200 to-yellow-200">
+    <div className="p-6 min-h-screen bg-gradient-to-r from-blue-200 to-sky-200">
       {!showRegistrationForm && !showProductManagement && (
-        <h1 className="text-2xl font-bold text-green-600 mb-4">Seller Module</h1>
+        <h1 className="text-4xl font-bold text-green-600 mb-4">Seller Module</h1>
       )}
 
       {!showRegistrationForm && !showProductManagement ? (
@@ -39,8 +39,8 @@ function Seller() {
               className="bg-white shadow-lg rounded-lg p-4 hover:shadow-2xl transition-shadow cursor-pointer"
               onClick={() => handleCardClick(feature.title)}
             >
-              <h2 className="text-lg font-semibold text-green-700">{feature.title}</h2>
-              <p className="text-gray-600 mt-2">{feature.description}</p>
+              <h2 className="p-4 text-lg font-semibold text-green-700">{feature.title}</h2>
+              <p className="p-2 text-gray-600 mt-2">{feature.description}</p>
             </div>
           ))}
         </div>
